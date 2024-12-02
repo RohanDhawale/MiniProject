@@ -43,9 +43,8 @@ public class CountryController {
 		 return "Country updated Successfully";
 	}
 	
-	@DeleteMapping("/deletecountry/{name}")
-	public ResponseEntity<ResponseStructure<Country>> deleteCountry(@PathVariable String name) {
-		return ctrs.deleteCountry(name);
-		
-	}
+//	@DeleteMapping("/deletecountry/{name}")
+//	public ResponseEntity<ResponseStructure<Country>> deleteCountry(@PathVariable String name) {
+//		return ctrs.deleteCountry(name);
+//	}
 }
