@@ -37,7 +37,7 @@ public class CountryController {
 		return ctrs.saveCountry(country);
 	}
 	
-	@PutMapping("updatecountry")
+	@PutMapping("/updatecountry")
 	public String updateCountry(@RequestBody Country Country) {
 		 ctrs.saveCountry(Country);
 		 return "Country updated Successfully";
@@ -47,4 +47,10 @@ public class CountryController {
 //	public ResponseEntity<ResponseStructure<Country>> deleteCountry(@PathVariable String name) {
 //		return ctrs.deleteCountry(name);
 //	}
+	
+	@PutMapping("/updatecountrysdsdsdsdsd")
+	public String updateCountrsdy(@RequestBody Country Country) {
+		 ctrs.saveCountry(Country);
+		 return "Country updated Successfully";
+	}
 }
